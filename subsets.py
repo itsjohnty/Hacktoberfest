@@ -1,4 +1,5 @@
 class Solution(object):
+    # code for subset
     def subsets(self, nums):
         res=[]
         n=len(nums)
@@ -12,4 +13,5 @@ class Solution(object):
                 subset.pop()
         
         backtrack(0,[])
+        
         return res
