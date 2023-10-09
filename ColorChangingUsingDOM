@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM Project</title>
+    <style>
+        body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: gray;
+}
+/* .welcome{
+    color: red;
+
+}
+.welcome i:hover{
+    color: blue;
+} */
+.data{
+    border: 1px solid red;
+    /* grid-row: auto; */
+}
+    </style>
+</head>
+<body>
+    <!-- <h1 class="welcome">Welcome to the world of Javascript</h1>
+    <br>
+    <p class="function">Here ,While you press the button it will keep changing its colour.</p>
+    <br>
+    <div class="dom">It is Done by DOM of Javascript</div>
+    <br> -->
+    <button id="button">Press Me to Change</button>
+    <script>
+        const btn =document.getElementById("button")
+const randomColor=()=>{
+    let val="0123456789ABCDEF";
+    let cons="#";
+    for ( let i=0; i<6;i++){
+        cons=cons+val[Math.floor(Math.random()*16)];
+
+    }
+    return cons;
+}
+
+console.log(randomColor());
+
+function changeRandomColor(){
+    document.body.style.backgroundColor=randomColor()
+    
+}
+
+btn.addEventListener("click",changeRandomColor)
+    </script>
+    
+</body>
+</html>
