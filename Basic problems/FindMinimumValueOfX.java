@@ -1,7 +1,6 @@
 // Ques: Given a, b and c such that (a | X) & (b | X) = c; find minimum value of X which satisfies this condition. If no value of X is possible return -1;
 
 
-package Java;
 import java.util.*;
 
 public class FindMinimumValueOfX {
@@ -10,6 +9,7 @@ public class FindMinimumValueOfX {
     int a = sc.nextInt();
     int b = sc.nextInt();
     int c = sc.nextInt();
+    sc.close();
 
     int a_and_b = a & b;  // (a | X) & (b | X) = c ==> (a & b) | X = c
     int not_ab = ~(a_and_b);
