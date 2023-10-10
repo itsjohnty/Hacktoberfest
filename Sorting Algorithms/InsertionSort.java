@@ -1,4 +1,4 @@
-public class InsertionSortDemo {
+public class InsertionSort {
 
     public void insertionsort(int A[], int n) {
         for(int i=1;i<n;i++) {
@@ -19,7 +19,7 @@ public class InsertionSortDemo {
     }
 
     public static void main(String args[]) {
-        InsertionSortDemo s = new InsertionSortDemo();
+        InsertionSort s = new InsertionSort();
         int A[] = {3, 5, 8, 9, 6, 2};
         System.out.println("Original Array: ");
         s.display(A, 6);

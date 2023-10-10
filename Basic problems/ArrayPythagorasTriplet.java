@@ -1,5 +1,3 @@
-package Java;
-
 import java.util.Arrays;
 
 public class ArrayPythagorasTriplet {
