@@ -1,0 +1,3 @@
+# Simon Says Game
+
+This is the Simon Says Game which is basically created using HTML, CSS & JavaScript ...
